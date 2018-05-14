@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Slabo+27px');
+
+html, body {
+  margin:0;
+  padding:0;
+  font-size: 12px;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  font-family: 'Crimson Text', serif;
+}
+
+body {
+  position: relative;
+  background: rgb(226,15,221);
+  background: linear-gradient(200deg,rgba(0,255,237,1) 0%, rgba(226,15,221,1) 100%);
+}
+
+.white-bg {
+  position: absolute;
+  top:20px;
+  left:20px;
+  width:calc(100% - 40px);
+  height: calc(100% - 40px);
+
+  background-color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  /*font-weight: normal;*/
+  margin:20px 0;
+  padding:0;
+
+  font-family: 'Slabo 27px', serif;
+  line-height: 1.2;
+}
+
+p {
+  margin:10px 0;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  width:100%;
+  padding:20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+section h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background-color:purple;
+  border-radius: 4px;
+  color: #FFF;
+  text-align: center;
+
+  margin:10px 0;
+  padding:10px;
+  min-width: 100px;
+
+  font-size: 1.4em;
+}
+
+.button:hover {
+  background-color: pink;
+  color: purple;
+}
+
+#container {
+  padding:20px; /*OFFSETS GRADIENT BOX*/
+  box-sizing: border-box;
+  margin:0 auto;
+  /*max-width: 1280px;*/
+}
+
+.intro__image,
+.intro__text {
+  text-align: center;
+  width:80%;
+  margin:auto;
+}
+
+.intro__text {
+  /*max-width: 610px;*/
+}
+
+.intro__text h1 {
+  font-size:2.5em;
+}
+
+.intro__text p {
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+.intro__text {
+
+}
+
+.projects__project {
+  position: relative;
+  display: block;
+  width:100%;
+  margin:auto;
+  margin-bottom:20px;
+
+  box-sizing: border-box;
+  padding:10px;
+
+  border:1px solid gray;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+} 
+
+.projects__project h2 {
+  margin:0;
+  font-size: 2em;
+}
+
+.projects__project p {
+  font-size: 1.4em;
+  margin:0;
+}
+
+.projects__project a {
+  font-size: 1.2em;
+  min-width: 80px;
+}
+
+.api__logos,
+.contact__icons {
+  text-decoration: none;
+  list-style: none;
+  margin:0;
+  padding:0;
+
+  text-align: center;
+  width: 100%;
+}
+
+.api__logos li,
+.contact__icons li,
+.contact__icons a  {
+  line-height: 0;
+}
+
+.api__logos li img,
+.contact__icons li img {
+  width:100%;
+} 
+
+.api__logos li{
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+}
+
+.contact__icons li{
+  display: inline-block;
+  width: 16%;
+  margin: 1%;
+}
+
+.footer {
+  text-align: center;
+  padding:40px 0;
+
+  font-size: 0.8em; 
+}
+
+@media (min-width:620px) {
+  .intro__image {
+    width: 50%;
+    float: left;
+  }
+
+  .intro__text {
+    position: absolute;
+    right:0;
+    top:50%;
+    width:50%;
+    padding:0 20px;
+    box-sizing: border-box;
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    text-align: left;
+  }
+
+  .intro__text h1 {
+    text-align: left;
+  }
+
+  .projects__project {
+    width:32%;
+    width:32.65999999%;
+    margin-right:1%;
+    margin-bottom:1%;
+    float: left;
+  } 
+
+  .projects__project:nth-of-type(3n) {
+    margin-right:0;
+  }
+
+  .api__logos li{
+    width: 16%;
+    margin: 2%;
+  }
+
+  .contact__icons li{
+    display: inline-block;
+    width: 14%;
+    margin: 1%;
+  }
+
+} 
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
